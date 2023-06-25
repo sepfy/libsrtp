@@ -157,7 +157,7 @@ void srtp_sha1_update(srtp_sha1_ctx_t *ctx,
                       const uint8_t *M,
                       int octets_in_msg);
 
-void srtp_sha1_final(srtp_sha1_ctx_t *ctx, uint32_t output[5]);
+void srtp_sha1_final(srtp_sha1_ctx_t *ctx, uint32_t *output);
 
 /*
  * The srtp_sha1_core function is INTERNAL to SHA-1, but it is declared
